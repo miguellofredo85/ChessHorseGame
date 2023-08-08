@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bone"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lyPremium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/tvPremium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amaranthregular"
+            android:text="@string/no_ads"
+            android:textColor="@color/white_bone"
+            android:background="@color/red"
+            android:textAlignment="center"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/svGame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lyPremium"
+        android:paddingBottom="70dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:fontFamily="@font/amaranthold"
+                android:textColor="@color/grey"
+                android:textAlignment="center"
+                android:paddingTop="22dp"
+                android:text="Horse challenge!"/>
+
+            <TextView
+                android:id="@+id/tv_level_title"
+                android:background="@drawable/bg_title_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/amaranthold"
+                android:paddingTop="22dp"
+                android:textAlignment="center"
+                android:textColor="@color/white_bone"
+                android:textSize="18sp"
+                android:text="Level"/>
+            <TextView
+                android:id="@+id/tv_level_num"
+                android:background="@drawable/bg_title_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/amaranthold"
+                android:paddingBottom="22dp"
+                android:textAlignment="center"
+                android:textColor="@color/white_bone"
+                android:textSize="18sp"
+                android:text="1"/>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                android:baselineAligned="false"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_moves_title"
+                    android:background="@drawable/bg_data_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/amaranthold"
+                    android:paddingBottom="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white_bone"
+                    android:textSize="18sp"
+                    android:text="Moves"/>
+
+                    <TextView
+                        android:id="@+id/tv_moves_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/bg_data_bottom"
+                        android:fontFamily="@font/amaranthold"
+                        android:paddingBottom="10dp"
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textColor="@color/white_bone"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvTimeText"
+                        android:background="@drawable/bg_data_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/amaranthold"
+                        android:paddingBottom="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white_bone"
+                        android:textSize="18sp"
+                        android:text="Time"/>
+
+                    <TextView
+                        android:id="@+id/tvTimeData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/bg_data_bottom"
+                        android:fontFamily="@font/amaranthold"
+                        android:paddingBottom="10dp"
+                        android:text="00:00"
+                        android:textAlignment="center"
+                        android:textColor="@color/white_bone"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvLives"
+                        android:text="Lives"
+                        android:background="@drawable/bg_datatexttop_contrast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/amaranthold"
+                        android:paddingBottom="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white_bone"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:text="0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/bg_datatextbottom_contrast"
+                        android:fontFamily="@font/amaranthold"
+                        android:paddingBottom="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white_bone"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvOptionText"
+                        android:background="@drawable/bg_data_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amaranthold"
+                        android:paddingBottom="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white_bone"
+                        android:textSize="18sp"
+                        android:text="Options"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:translationY="-8dp"
+                        android:background="@color/red"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_data_bottom"
+                        android:gravity="center"
+                        android:translationY="-8dp">
+
+                    <TextView
+                        android:id="@+id/tvOptionData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_data_bottom"
+                        android:fontFamily="@font/amaranthold"
+                        android:paddingBottom="10dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/white_bone"
+                        android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tvBonusData"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/amaranthold"
+                            android:paddingBottom="10dp"
+                            android:text=""
+                            android:textColor="@color/white_bone"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/lyAds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+    </LinearLayout>
+</RelativeLayout>
