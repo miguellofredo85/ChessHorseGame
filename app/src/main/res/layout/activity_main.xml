@@ -805,14 +805,87 @@
                             android:background="@color/brown_light"
                             />
                     </TableRow>
-
-
                 </TableLayout>
-<!--                <LinearLayout-->
-<!--                    android:layout_width=""-->
-<!--                    android:layout_height=""></LinearLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/lyMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white_bone"
+                    android:orientation="vertical"
+                    android:paddingBottom="40dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tvIntroLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/amaranthregular"
+                        android:shadowColor="@color/white_bone"
+                        android:shadowRadius="8"
+                        android:text="Level: 1"
+                        android:textColor="@color/black"
+                        android:textSize="90sp" />
+
+                    <TextView
+                        android:id="@+id/lyIntroLives"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:shadowColor="@color/white_bone"
+                        android:shadowRadius="8"
+                        android:text="Lives: 1"
+                        android:textColor="@color/black"
+                        android:textSize="70sp" />
+
+                    <TextView
+                        android:id="@+id/tvAction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/bg_title_top"
+                        android:fontFamily="@font/amaranthregular"
+                        android:onClick="launchAction"
+                        android:paddingTop="10dp"
+                        android:text="Next Level"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="30dp" />
+
+                    <ImageButton
+                        android:id="@+id/ibtShare"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/bg_title_bottom"
+                        android:fontFamily="@font/amaranthregular"
+                        android:onClick="launchAction"
+                        android:text="Next Level"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:src="@drawable/ic_share"/>
+                </LinearLayout>
 
             </RelativeLayout>
+            <TextView
+                android:id="@+id/tvInstructions"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Move the horse until fill all board squares"
+                android:textColor="@color/black"
+                android:onClick="launchShareGame"
+                android:textSize="20sp"/>
         </LinearLayout>
     </ScrollView>
     <LinearLayout

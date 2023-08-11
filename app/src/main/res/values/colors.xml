@@ -11,5 +11,5 @@
     <color name="blue_light">#03A9F4</color>
     <color name="green">#036907</color>
     <color name="green_light">#CCF1A0</color>
-    <color name="white_bone">#F2EFEF</color>
+    <color name="white_bone">#CDFFFFFF</color>
 </resources>
